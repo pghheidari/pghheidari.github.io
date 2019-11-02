@@ -63,14 +63,16 @@
 }
 #sample-video h2 {
     margin: 0;
+    text-align: justify;
 }
 .sample-video__content {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     padding-top: 2rem;
 }
 .sample-video__preview {
-    width: 40%;
+    width: 100%;
     position: relative;
 }
 .sample-video__preview img {
@@ -87,8 +89,8 @@
     top: 0.4rem;
 }
 .sample-video__text {
-    width: 60%;
-    padding-right: 3rem;
+    width: 100%;
+    padding-top: 3rem;
 }
 .sample-video__text p {
     margin: 0;
@@ -111,19 +113,18 @@
     /*grid-column: 2/2;*/
 }
 .course__list {
-    /*width: 80%;
-    margin: auto;*/
     display: flex;
     justify-content: center;
+    flex-direction: column;
     /*grid-column: 2/2;*/
 }
 .course {
     background: white;
     margin: 10px;
-    width: 25%;
     box-shadow: 2px 2px 18px #888888;
     border-radius: 8px;
     text-align: right;
+    font-size: initial;
     /*grid-column: 2/2;*/
 }
 .course__img {
@@ -148,11 +149,14 @@
     font-family: "Shabnam-Bold";
     margin-top: 0;
 }
-.course__content--info {
-    font-size: 0.9rem;
-}
 .fd {
     font-family: "Shabnam-FD";
+}
+.price {
+    color: #dc7232;
+}
+hr {
+    border: 0.5px solid #e2e2e2;
 }
 /* ---------------------------------------------------------- */
 #comments {
@@ -162,16 +166,20 @@
     padding: 5rem 0;
 }
 .comments__user {
-    grid-column: 2/2;
+    grid-column: 2/4;
     position: relative;
 }
 .comments__user--icon {
-    background: #f9f9f9;
+    /*background: #f9f9f9;
     border-radius: 50%;
     box-shadow: 2px 2px 18px #e9e9e9;
     width: 5rem;
     height: 5rem;
-    text-align: center;
+    text-align: center;*/
+    width: 50%;
+}
+.comments__user--icon img {
+    width: 100%;
 }
 .comments__user--icon2 {
     background: white;
@@ -185,9 +193,9 @@
     top: 11%;
     z-index: -1;
 } 
-.comments__user--icon img {
+/*.comments__user--icon img {
     padding-top: 0.4rem;
-}
+}*/
 .comments__user--title {
     padding-top: 1.2rem;
 }
@@ -195,7 +203,7 @@
     margin: 0;
 }
 .comments__info {
-    grid-column: 3/3;
+    grid-column: 2/4;
 }
 .comments__info p {
     text-align: justify;
@@ -209,16 +217,20 @@
     background: #e38e5b;
     color: white;
     display: flex;
+    flex-direction: column;
     padding: 0 10%;
     text-align: justify;
     align-items: center;
 }
 .app__img {
-    width: 50%;
+    /*width: 50%;*/
+    order: 2;
 }
 .app__info {
-    /*padding-top: 4rem;*/
-    width: 50%;
+    /*padding-top: 4rem;
+    width: 50%;*/
+    order: 1;
+    padding: 2rem 0;
 }
 .app__info h3 {
     margin: 0;
@@ -226,7 +238,6 @@
 /* ---------------------------------------------------------- */
 #blog {
     text-align: center;
-
     padding: 5% 10%;
 }
 #blog h4 {
@@ -236,14 +247,13 @@
 }
 .blog__list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .blog__box {
-    
-    width: 25%;
     border: 1px solid #eeeded;
     box-shadow: 2px 3px 8px 0px #f3f3f3;
-    margin: 0 20px;
+    margin: 1rem;
     text-align: right;
     border-radius: 3px;
 }
@@ -268,7 +278,7 @@
     padding: 8px 16px;
     border-radius: 8px;
     text-decoration: none;
-    width: 15%;
+    width: 70%;
     margin: 2.5rem auto;
 }
 .read-more {
@@ -296,5 +306,52 @@
         padding: 8px 16px;
         border-radius: 8px;
         text-decoration: none;
+    }
+    .sample-video__content {
+        flex-direction: row;
+    }
+    .sample-video__preview {
+        width: 40%;
+    }
+    .sample-video__text {
+        width: 60%;
+        padding-right: 3rem;
+        padding-top: 0;
+    }
+    .course__list {
+        flex-direction: row;
+    }
+    .course {
+        width: 25%;
+    }
+    .course__content--info {
+        font-size: 0.9rem;
+    }
+    .comments__user {
+        grid-column: 2/2;
+    }
+    .comments__info {
+        grid-column: 3/3;
+    }
+    #app {
+        flex-direction: row;
+    }
+    .app__img {
+        width: 50%;
+        order: 1;
+    }
+    .app__info {
+        /*padding-top: 4rem;*/
+        width: 50%;
+        order: 2;
+    }
+    .blog__list {
+        flex-direction: row;
+    }
+    .blog__box {
+        width: 25%;
+    }
+    .blog__all {
+        width: 15%;
     }
 }

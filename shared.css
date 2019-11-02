@@ -190,6 +190,7 @@ body {
 .newsletter {
     background: #434343;
     display: flex;
+    flex-direction: column;
     align-items: center;
     grid-column: 2/5;
     text-align: center;
@@ -197,27 +198,26 @@ body {
     padding: 1.2rem 0;
 }
 .newsletter__input {
-    width: 45%;
+    padding: 1rem;
 }
 .newsletter__text {
-    width: 50%;
+    /*width: 50%;*/
     text-align: justify;
     /*color: white;*/
     font-size: 0.9rem;
     line-height: 1.6rem;
+    padding: 0 1rem;
 }
 input[type=text], input[type=submit] {
     font-family: inherit;
     padding: 1rem;
     border: none;
-    width: 60%;
+    width: 100%;
 }
 input[type=submit] {
     background-color: #dc7232;
     color: white;
-    position: relative;
-    left: 1rem;
-    width: 20%;
+    
 }
 .main-footer__about {
     grid-column: 2/2;
@@ -230,7 +230,7 @@ input[type=submit] {
     text-align: right;
 }
 .main-footer__guide {
-    grid-column: 3/3;
+    grid-column: 4/5;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -245,15 +245,13 @@ input[type=submit] {
     font-family: "Shabnam-Bold";
 }
 .main-footer__wetalk {
-    grid-column: 4/4;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 .copyright {
     background: #272727;
     grid-column: 1/6;
-    padding: 0;
+    padding: 1rem;
+    
     text-align: center;
     font-size: 0.8rem;
     margin-top: 3rem;
@@ -282,5 +280,35 @@ input[type=submit] {
         justify-self: end;
         grid-column: 4/4;
         align-self: center;
+    }
+    .newsletter {
+        flex-direction: row;
+    }
+    .newsletter__input {
+        width: 45%;
+    }
+    .newsletter__text {
+        width: 50%;
+    }
+    input[type=text], input[type=submit] {
+        width: 60%;
+        
+    }
+    input[type=submit] {
+        position: relative;
+        left: 1rem;
+        width: 20%;
+    }
+    .main-footer__wetalk {
+        grid-column: 4/4;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-footer__guide {
+        grid-column: 3/3;
+    }
+    .copyright {
+        padding: 0;
     }
 }

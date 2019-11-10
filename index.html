@@ -37,10 +37,10 @@
                 <nav class="main-nav">
                     <ul class="main-nav__items">
                         <li class="main-nav__item">
-                            <a href="start-hosting/index.html">صفحه اصلی</a>
+                            <a href="index.html">صفحه اصلی</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="customers/index.html">دوره های آموزشی</a>
+                            <a href="#course">دوره های آموزشی</a>
                         </li>
                         <li class="main-nav__item">
                             <a href="packages/index.html">بلاگ</a>
@@ -55,9 +55,9 @@
                 </nav>
 
                 <div class="main-header__bottom--icons">
-                    <a href="packages/index.html">ثبت نام / ورود</a>
-                    <span>search</span>
-                    <span>language</span>
+                    <a class="register" href="packages/index.html">ثبت نام / ورود</a>
+                    <a href="#"><img class="icons" src="icon/magnifying-glass.svg"></a>
+                    <a href="#"><img class="icons" src="icon/global.svg"></a>
                 </div>
             </div>
         </header>
@@ -68,7 +68,7 @@
                     <a href="#">صفحه اصلی</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#">دوره های آموزشی</a>
+                    <a href="#course">دوره های آموزشی</a>
                 </li>
                 <li class="mobile-nav__item mobile-nav__item--cta">
                     <a href="#">بلاگ</a>
@@ -111,14 +111,14 @@
                 </div>
             </section>
 
-            <section id="courses">
+            <a id="course"><section id="courses"></a>
                 <div class="courses__title">
                     <img src="img/separator.png" >
                     <h2>دوره های آموزش انگلیسی ویتاک</h2>
                 </div>
                 <div class="course__list">
                     <div class="course">
-                        <a href="#">
+                        <a href="course/beginner.html">
                             <div class="course__img">
                                 <img class="responsive" src="img/Beginner2.png" >
                             </div>
@@ -300,7 +300,10 @@
                 <p>تمام مطالب این وبسایت به وسیله نویسندگان وبسایت ترجمه، تالیف یا آماده سازی شده و هرگونه کپی برداری یا استفاده تجاری از آن ممنوع است</p>
             </div>
         </footer>
-
+        <script type="text/javascript" src="svgeezy.min.js"></script>
+        <script>
+            svgeezy.init(false, 'png');
+        </script>
         <script src="shared.js"></script>
     </body>
 </html>

@@ -64,7 +64,7 @@ body {
 }
 /* ---------------------------------------------------------- */
 .main-header__bottom {
-    padding: 16px;
+    padding: 1rem 0px;
     height: 18vh;
     display: grid;
     grid-template-columns: 10% 0.4fr 1.9fr 0.7fr 10%;
@@ -83,7 +83,6 @@ body {
 }
 .main-nav {
     display: none;
-    
     /*font-size: 1.1rem;*/
 }
 .main-nav__items {
@@ -108,18 +107,23 @@ body {
 .main-header__bottom--icons {
     display: none;
 }
-.main-header__bottom--icons span {
-    align-self: center;;
+.main-header__bottom--icons .icons {
+    width: 1.7rem;
+    height: 1.7rem;
+    padding-right: 0.5rem;
 }
 .main-header__bottom--icons a {
+    align-self: center;
+}
+.main-header__bottom--icons .register {
     color: white;
     background: #dc7232;
     padding: 8px 16px;
     border-radius: 8px;
     text-decoration: none;
 }
-.main-header__bottom--icons a:hover,
-.main-header__bottom--icons a:active {
+.main-header__bottom--icons .register:hover,
+.main-header__bottom--icons .register:active {
     color: #dc7232;
     background: white;
     border: none;
@@ -275,6 +279,7 @@ input[type=submit] {
         align-self: center;
         font-size: inherit;
     }
+    
     .main-header__top--social {
         display: block;
         justify-self: end;

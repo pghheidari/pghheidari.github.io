@@ -86,7 +86,9 @@
             <aside class="course-sidebar">
                 <h3>معرفی دوره</h3>
                 <div class="course-sidebar__voice">
-
+                    <div id="waveform"></div>
+                    <img id="play-button" src="../icon/play-button.svg" >
+                    <img id="pause-button" src="../icon/pause.svg" >
                 </div>
                 
             </aside>
@@ -94,8 +96,7 @@
                 <img src="../img/separator.png" >
                 <h2>دوره مقدماتی آموزش زبان انگلیسی ویتاک</h2>
                 <p class="last-update">آخرین ویرایش در <span class="fd">21</span> شهریور <span class="fd">1398</span></p>
-                <div id="waveform"></div>
-                    <img id="play-button" src="../icon/play-button.svg" >
+                
             </section>
             
         </main> 
@@ -106,20 +107,26 @@
             var wavesurfer = WaveSurfer.create({
                 container: '#waveform',
                 waveColor: '#D9DCFF',
-                progressColor: '#4353FF',
-                cursorColor: 'transparent',
+                progressColor: '#dc7232',
                 barWidth: 3,
                 barRadius: 3,
                 cursorWidth: 0,
-                height: 100,
-                barGap: 3
+                height: 40,
+                barGap: 3,
+                barHeight: 5
             });
             wavesurfer.load('../tozihat.mp3');
 
             document.getElementById("play-button").addEventListener("click", function() {
                 wavesurfer.play();
+                document.getElementById("pause-button").style.display = "inline-block";
+                document.getElementById("play-button").style.display = "none";
             });
-            
+            document.getElementById("pause-button").addEventListener("click", function() {
+                wavesurfer.pause();
+                document.getElementById("pause-button").style.display = "none";
+                document.getElementById("play-button").style.display = "inline-block";
+            });
         </script>
         <script type="text/javascript" src="../svgeezy.min.js"></script>
         <script>

@@ -67,6 +67,7 @@
     border: 2px solid #d4d4d4;
     border-radius: 10px;
     text-align: center;
+    padding: 0px 1.2rem;
 }
 .course-sidebar__voice {
     display: flex;
@@ -78,4 +79,9 @@
 #play-button {
     width: 1.5rem;
     height: 1.5rem;
+}
+#pause-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
 }

@@ -10,6 +10,10 @@
     font-family: "Shabnam-FD";
     src: url("fonts/Shabnam-FD.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Shabnam-Bold-FD";
+    src: url("fonts/Shabnam-Bold-FD.ttf") format("truetype");
+}
 * {
     box-sizing: border-box;
 }

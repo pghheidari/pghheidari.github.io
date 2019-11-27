@@ -1,0 +1,14 @@
+{
+  "name": "wetalk",
+  "version": "1.0.0",
+  "description": "Learning English",
+  "main": "shared.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/contact-us.scss css/contact-us.css"
+  },
+  "author": "Pegah",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

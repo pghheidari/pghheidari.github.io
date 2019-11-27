@@ -1,0 +1,15 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: calc(0.6em + 0.6vw);
+}
+
+body {
+    margin: 0;
+    font-family: "Shabnam";
+    box-sizing: border-box;
+}

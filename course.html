@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assests/favicon-32x32.png">
     <title>ویتاک | آموزش مقدماتی زبان انگلیسی</title>
 
     <link rel="stylesheet" href="css/course.css">
@@ -27,42 +27,58 @@
         <div class="cds">
             <p class="cds__title">محتویات دوره</p>
             <ul class="cds__subjects">
-                <li class="cds__subject">
-                    <span>1. مکالمه استارتر</span>
-                    <span>2 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>2. آموزش خواندن</span>
-                    <span>4 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>3. تمرین تلفظ لهجه آمریکایی</span>
-                    <span>5 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>4. آموزش مکالمه</span>
-                    <span>3 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>5. آموزش تکنیک های انگلیسی</span>
-                    <span>7 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>6. تمرین تلفظ لغات</span>
-                    <span>4 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>7. تمرین شنیداری</span>
-                    <span>8 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>8. تمرین تلفظ لهجه آمریکایی</span>
-                    <span>10 دقیقه</span>
-                </li>
-                <li class="cds__subject">
-                    <span>9. مکالمه موقعیت</span>
-                    <span>7 دقیقه</span>
-                </li>
+                <button class="accordion">درس اول</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>1. مکالمه استارتر</span>
+                        <span>2 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>2. آموزش خواندن</span>
+                        <span>4 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس دوم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>3. تمرین تلفظ لهجه آمریکایی</span>
+                        <span>5 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>4. آموزش مکالمه</span>
+                        <span>3 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>5. آموزش تکنیک های انگلیسی</span>
+                        <span>7 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس سوم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>6. تمرین تلفظ لغات</span>
+                        <span>4 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس چهارم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>7. تمرین شنیداری</span>
+                        <span>8 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>8. تمرین تلفظ لهجه آمریکایی</span>
+                        <span>10 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس پنجم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>9. مکالمه موقعیت</span>
+                        <span>7 دقیقه</span>
+                    </li>
+                </div>
+
             </ul>
 
         </div>
@@ -73,6 +89,23 @@
             </video>
         </div>
     </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

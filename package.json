@@ -4,7 +4,7 @@
   "description": "Learning English",
   "main": "shared.js",
   "scripts": {
-    "compile:sass": "node-sass sass/contact-us.scss css/contact-us.css"
+    "compile:sass": "node-sass sass/course.scss css/course.css"
   },
   "author": "Pegah",
   "license": "ISC",

@@ -195,7 +195,7 @@ div[class^="course-sidebar__info"] p::before {
     &h {
         display: flex;
         align-items: center;
-        
+
         padding: .6rem 1rem;
         border-bottom: 1px solid #d8d8d8;
 
@@ -216,6 +216,7 @@ div[class^="course-sidebar__info"] p::before {
             margin-right: 1rem;
             border-right: 1px solid $color-black;
         }
+
         a {
             text-decoration: none;
             color: $color-black;
@@ -235,17 +236,25 @@ div[class^="course-sidebar__info"] p::before {
         }
 
         &__subject {
+            font-family: "Shabnam-FD";
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
             &s {
                 list-style: none;
                 font-size: .9rem;
                 padding: 0;
                 margin: 0;
-            }
 
-            font-family: "Shabnam-FD";
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
+                .panel {
+                    background-color: white;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+            }
 
             &:hover {
                 background: #eee;
@@ -270,6 +279,28 @@ div[class^="course-sidebar__info"] p::before {
         }
     }
 
+}
+
+.accordion {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: .9rem;
+    transition: 0.4s;
+    position: relative;
+    font-family: inherit;
+    border-bottom: 1px solid $color-grey-light2;
+
+    &::after {
+        content: '\276F';
+        position: absolute;
+        left: 0;
+        transform: rotate(270deg) translateY(20px);
+    }
 }
 
 @media (min-width: 40rem) {
@@ -329,9 +360,11 @@ div[class^="course-sidebar__info"] p::before {
             width: 25%;
             height: calc(100vh - 85px);
             order: 1;
+
             &__title {
                 text-align: right;
             }
+
             &__subjects {
                 direction: rtl;
             }

@@ -772,7 +772,7 @@ body {
     fill: #fff; }
   @media (max-width: 25em) {
     #curve2 {
-      top: -1px; } }
+      top: -3px; } }
   @media (min-width: 112.5em) {
     #curve2 {
       top: -1px; } }

@@ -770,6 +770,9 @@ body {
   top: 0; }
   #curve2 path {
     fill: #fff; }
+  @media (max-width: 25em) {
+    #curve2 {
+      top: -1px; } }
   @media (min-width: 112.5em) {
     #curve2 {
       top: -1px; } }

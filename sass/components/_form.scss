@@ -1,0 +1,47 @@
+.form {
+    width: 100%;
+    &__group {
+        text-align: center;
+    }
+
+    &__group:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+    &__input {
+        font-family: inherit;
+        padding: .5rem 1rem;
+        width: 100%;
+        border: 1.5px solid #e2e2e2;
+        border-radius: 20px;
+        font-size: .9rem;
+        transition: all .3s;
+
+        &[type="tel"] {
+            font-family: "Shabnam-FD";
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0.01rem 0.3rem rgba($color-black, .1);
+            border: 1.5px solid rgba(green, .5);
+        }
+
+        &:focus:invalid {
+            border: 1.5px solid rgba($color-secondary, .5);
+        }
+    }
+    &__label {
+        font-size: .75rem;
+        margin-right: 1rem;
+        margin-top: .3rem;
+        display: block;
+        transition: all .3s;
+        text-align: right;
+    } 
+
+    &__input:placeholder-shown ~ &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2rem);
+    }
+}

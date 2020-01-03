@@ -1,0 +1,252 @@
+#footer {
+    padding: 16% 16% 0 16%;
+    background: $color-primary;
+    position: relative;
+
+    @include respond(tab-land) {
+        padding: 40% 5% 0 5%;
+    }
+}
+
+.footer {
+    &__newsletter {
+        background: $color-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 4%;
+        width: 68%;
+        padding: 2.5% 5%;
+        border-radius: 10px;
+
+        &--title {
+            h5 {
+                margin: 0;
+                font-size: 1.76rem;
+            }
+
+            p {
+                font-size: 1.44rem;
+                margin: .8rem 0 0 0;
+            }
+        }
+
+        &--form {
+            display: flex;
+            align-items: center;
+
+            input[type="text"] {
+                font-family: inherit;
+                padding: 4.5% 10% 4% 4%;;
+                border: none;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                outline: none;
+
+                @include respond(tab-land) {
+                    border-radius: 20px;
+                }
+            }
+
+            button {
+                border: none;
+                background: $color-white;
+                padding: 4.4% 4.4% 4.4% 10%;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                outline: none;
+
+                img {
+                    width: 1.6rem;
+
+                    @include respond(s-phone) {
+                        width: 2rem;
+                    }
+                }
+
+                @include respond(s-phone) {
+                    border-radius: 2rem;
+                    height: 4rem;
+                    width: 4rem;
+                }
+            }
+
+            @include respond(s-phone) {
+                margin-top: 2rem;
+            }
+        }
+
+        @include respond(s-phone) {
+            flex-direction: column;
+            text-align: center;
+            top: 0;
+            left: 50%;
+            transform: translate(-50% , 0);
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: $color-white;
+        margin-bottom: 4.8rem;
+
+        &--info {
+            font-size: 1.3rem;
+
+            a {
+                width: 4.8rem;
+                display: block;
+
+                img {
+                    width: 100%;
+                }
+
+                @include respond(tab-land) {
+                    margin: 0 auto;
+                }
+            }
+
+            @include respond(tab-land) {
+                margin: 0 auto;
+                font-size: 1.8rem;
+            }
+        }
+
+        &--social {
+            display: flex;
+            align-items: center;
+
+            a {
+                width: 1.9rem;
+                margin-left: 1.6rem;
+
+                img {
+                    width: 100%;
+
+                    &:hover {
+                        box-shadow: 0px 1px 0px #cacaca;
+                        ;
+                    }
+                }
+
+
+            }
+
+        }
+
+        &--guide,
+        &--links {
+            a {
+                display: block;
+                color: $color-white;
+                text-decoration: none;
+                padding: .48rem;
+                font-size: 1.3rem;
+
+                @include respond(tab-land) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            @include respond(tab-land) {
+                margin: 0 auto;
+                margin-top: 3rem;
+            }
+        }
+
+        &--title {
+            font-family: "IRANSans-Bold";
+            font-size: 1.92rem;
+        }
+
+        @include respond(tab-land) {
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-white;
+        font-size: 1.2rem;
+    }
+
+    &__designby {
+        p {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-white;
+            border-bottom: 1px dashed $color-white;
+        }
+    }
+}
+
+.location::before {
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    margin-left: 0.48rem;
+    margin-bottom: -0.32rem;
+    background: url('../assets/icon/maps-and-flags.svg') center/cover no-repeat;
+}
+
+.call {
+    font-family: "IRANSans-FD";
+
+    &::before {
+        content: "";
+        width: 1.6rem;
+        height: 1.6rem;
+        display: inline-block;
+        margin-left: 0.48rem;
+        margin-bottom: -0.32rem;
+        background: url('../assets/icon/call-answer.svg') center/cover no-repeat;
+    }
+
+    &::after {
+        content: '+';
+    }
+}
+
+.email::before {
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    display: inline-block;
+    margin-left: 0.48rem;
+    margin-bottom: -0.32rem;
+    background: url('../assets/icon/envelope.svg') center/cover no-repeat;
+}
+
+.top {
+    width: 4rem;
+
+    @include respond(tab-land) {
+        margin: 5% auto;
+    }
+}
+
+#curve4 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: 0;
+
+    path {
+        fill: #fff;
+    }
+
+    @include respond(tab-land) {
+        top: -1px;
+    }
+}

@@ -1,0 +1,15 @@
+.icon {
+    width: 1.92rem;
+    height: 1.92rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.icon-before::before {
+    content: "";
+    width: 1.1rem;
+    height: 1.1rem;
+    display: inline-block;
+    margin-left: 0.3rem;
+    margin-bottom: -0.3rem;
+}

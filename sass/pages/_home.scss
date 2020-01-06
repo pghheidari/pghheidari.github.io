@@ -107,6 +107,10 @@
     @include respond(tab-land) {
         padding: 8%;
     }
+
+    @include respond(s-phone) {
+        padding: 8% 16%;
+    }
 }
 
 .courses__header {

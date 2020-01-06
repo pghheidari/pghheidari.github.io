@@ -561,6 +561,9 @@ body {
   @media (max-width: 75em) {
     #courses {
       padding: 8%; } }
+  @media (max-width: 28.125em) {
+    #courses {
+      padding: 8% 16%; } }
 
 .courses__header {
   display: flex;

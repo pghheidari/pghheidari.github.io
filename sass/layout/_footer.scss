@@ -38,7 +38,7 @@
 
             input[type="text"] {
                 font-family: inherit;
-                padding: 4.5% 10% 4% 4%;;
+                padding: 4.1% 10% 4% 4%;;
                 border: none;
                 border-top-right-radius: 20px;
                 border-bottom-right-radius: 20px;
@@ -162,7 +162,7 @@
             font-size: 1.92rem;
         }
 
-        @include respond(tab-land) {
+        @include respond(s-phone) {
             text-align: center;
             flex-direction: column;
             margin-bottom: 0;

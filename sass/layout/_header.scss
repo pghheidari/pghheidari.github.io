@@ -10,7 +10,12 @@
     }
 
     &__icons {
-        display: none;
+        display: flex;
+        align-items: center;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__logo {
@@ -20,10 +25,15 @@
             width: 100%;
         }
     }
+
+    @include respond(tab-land) {
+        padding: 1.6rem 8%;
+    }
 }
 
 .main-nav {
-    display: none;
+    display: block;
+    padding-right: 1.6rem;
 
     &__items {
         margin: 0;
@@ -34,7 +44,7 @@
 
     &__item {
         margin: 0 1.6rem;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
 
         a:hover,
         a:active {
@@ -42,8 +52,12 @@
         }
 
         @include respond(big-desktop) {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
         }
+    }
+
+    @include respond(tab-port) {
+        display: none;
     }
 }
 
@@ -80,25 +94,30 @@
 
 /* ---------------------------------------------------------- */
 .toggle-button {
-    width: 3.84rem;
-    background: transparent;
-    border: 1px solid $color-black;
-    border-radius: 3px;
-    cursor: pointer;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-left: 0.8rem;
+    display: none;
 
-    &:focus {
-        outline: none;
-    }
-
-    &__bar {
-        width: 100%;
-        height: 0.192rem;
-        background: $color-black;
+    @include respond(tab-port) {
         display: block;
-        margin: 0.8rem 0;
+        width: 3.84rem;
+        background: transparent;
+        border: 1px solid $color-black;
+        border-radius: 3px;
+        cursor: pointer;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 0.8rem;
+
+        &:focus {
+            outline: none;
+        }
+
+        &__bar {
+            width: 100%;
+            height: 0.192rem;
+            background: $color-black;
+            display: block;
+            margin: 0.8rem 0;
+        }
     }
 }
 
@@ -146,13 +165,16 @@
 
         &--icons {
             display: none;
+
             .icon {
                 width: 3.2rem;
                 height: 3.2rem;
                 padding-right: 1.6rem;
             }
+
             .btn {
                 font-size: 1.44rem;
+
                 &:hover {
                     border: 1px solid $color-secondary;
                 }
@@ -164,22 +186,4 @@
 .second-main-nav {
     display: none;
     font-size: 1.44rem;
-}
-
-/* Responsive---------------------------------------------------------- */
-@media (min-width: 40rem) {
-    .toggle-button {
-        display: none;
-    }
-
-    .main-nav {
-        display: block;
-        padding-right: 1.6rem;
-    }
-
-    .header__icons {
-        display: flex;
-        align-items: center;
-    }
-    
 }

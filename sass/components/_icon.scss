@@ -3,6 +3,10 @@
     height: 1.92rem;
     margin-right: 1rem;
     display: inline-block;
+
+    @include respond(tab-port) {
+        margin-right: 1.5rem;
+    }
 }
 
 .icon-before::before {

@@ -366,6 +366,31 @@
             rgba($color-primary, 0.9) 80%,
             rgba($color-secondary, 0.8) 120%);
 
+    h2 {
+        position: absolute;
+        top: 30%;
+        right: 16%;
+        font-size: 2.5rem;
+        color: $color-white;
+        text-align: justify;
+
+        @include respond(tab-port) {
+            top: 22%;
+        }
+
+        @include respond(phone) {
+            padding: 0 16%;
+            top: 16%;
+            right: 0;
+        }
+
+        @include respond(s-phone) {
+            padding: 0 10%;
+            top: 5%;
+            right: 0;
+        }
+    }
+    
     @include respond(s-phone) {
         background: $color-primary;
     }
@@ -383,19 +408,9 @@
     }
 
     &__text {
-        padding: 16% 16% 16% 0;
+        padding: 21% 16% 16% 0;
         color: $color-white;
         width: 60%;
-
-        h2 {
-            font-size: 2.5rem;
-            width: 120%;
-
-            @include respond(s-phone) {
-                width: 100%;
-                text-align: justify;
-            }
-        }
 
         p {
             width: 80%;
@@ -411,15 +426,24 @@
             margin-top: 3.2rem;
             display: inline-block;
 
+            @include respond(phone) {
+                margin-bottom: 10rem;
+            }
+
             @include respond(s-phone) {
                 position: relative;
                 z-index: 3;
+                margin-bottom: 0;
             }
+        }
+
+        @include respond(phone) {
+            padding: 32% 16% 0 0;
         }
 
         @include respond(s-phone) {
             width: 100%;
-            padding: 16% 10% 0 10%;
+            padding: 30% 10% 0 10%;
         }
     }
 
@@ -429,10 +453,15 @@
         position: relative;
         z-index: 2;
 
+        @include respond(phone) {
+            padding-bottom: 10%;
+        }
+
         @include respond(s-phone) {
             width: 100%;
             position: relative;
             top: -20px;
+            padding-bottom: 0;
         }
     }
 }
@@ -443,6 +472,13 @@
     top: 50%;
     width: 5.6rem;
     height: 5.6rem;
+
+    @include respond(phone) {
+        top: 40%;
+    } 
+    @include respond(s-phone) {
+        top: 50%;
+    }    
 }
 
 #curve2 {
@@ -628,6 +664,10 @@
 #blog {
     padding: 8% 16%;
 
+    @include respond(tab-port) {
+        padding: 8%;
+    }
+
     @include respond(s-phone) {
         padding: 12%;
     }
@@ -659,13 +699,13 @@
                 }
             }
 
-            @include respond(s-phone) {
+            @include respond(phone) {
                 width: 47%;
             }
         }
 
         &--desc {
-            @include respond(s-phone) {
+            @include respond(phone) {
                 display: none;
             }
         }

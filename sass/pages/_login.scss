@@ -3,21 +3,51 @@
     height: 100vh;
 
     &__white {
-        width: 100%;
-        background: #f7f7f7;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: white;
+
+        @include respond(jfc) {
+            width: 100%;
+            background: #f7f7f7;
+            justify-content: center;
+        }
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 3.5rem;
-        border-radius: 2px;
+        width: 70%;
+        height: 80vh;
+        box-shadow: 2px 2px 8px #3838383d;
+        padding: 7rem;
 
         .logo {
-            height: 6rem;
-            margin-bottom: 1rem;
+            display: none;
+
+            @include respond(jfc) {
+                display: block;
+                height: 10rem;
+                margin-bottom: 5rem;
+            }
+        }
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
+
+        @include respond(jfc) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3.5rem;
+            border-radius: 2px;
+        }
+
+        @include respond(s-phone) {
+            box-shadow: none;
+            padding: 0;
         }
     }
 
@@ -29,40 +59,65 @@
         margin-bottom: .5rem;
 
         img {
-            width: 2rem;
-            height: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+
+            @include respond(s-phone) {
+                width: 4rem;
+                height: 4rem;
+            }
         }
 
         p {
-            font-family: "Shabnam-Bold";
-            font-size: 1.2rem;
+            font-family: "IRANSans-Bold";
+            font-size: 2.2rem;
+
+            @include respond(s-phone) {
+                font-size: 2.5rem;
+            }
         }
     }
 
     &__orange {
-        display: none;
+        width: 50%;
+        background: lighten($color: $color-primary, $amount: 30%);
+        display: flex;
+        align-items: center;
+
+        @include respond(jfc) {
+            display: none;
+        }
     }
 
     &__pic {
         width: 70%;
         height: 80vh;
-        background: linear-gradient(to bottom, rgba(220, 114, 50, 0.6), transparent), url("../assets/img/demo2.jpg") center/cover;
+        background: linear-gradient(to bottom, rgba(85, 107, 138, 0.9), transparent), url("../assets/img/mockup14.jpg") center/cover;
         box-shadow: -6px 1px 8px 0px #3838383d;
         border-radius: 2px;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 }
 
 .prq {
-    margin-top: 1rem;
-    display: block;
+    margin-top: 2rem;
+    display: inline-block;
     text-decoration: none;
-    font-size: .8rem;
-    color: darken($color: $color-secondary, $amount: 7%);
-    font-family: "Shabnam-Bold";
+    font-size: 1.5rem;
+    color: $color-grey-dark2;
+    font-family: "IRANSans";
     text-align: center;
+    border-bottom: 1px dashed $color-grey-dark2;
 
-    &:hover {
+    /*&:hover {
         color: darken($color: $color-secondary, $amount: 15%);
+    }*/
+
+    @include respond(jfc) {
+        font-size: 2rem;
     }
 }
 
@@ -70,45 +125,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: .85rem;
+    font-size: 1.5rem;
 
     a {
-        color: darken($color: $color-secondary, $amount: 7%);
-        font-family: "Shabnam-Bold";
+        color: $color-grey-dark2;
+        font-family: "IRANSans-Bold";
         text-decoration: none;
         padding-right: .5rem;
+        border-bottom: 1px dashed $color-grey-dark2;
 
-        &:hover {
+        /*&:hover {
             color: darken($color: $color-secondary, $amount: 15%);
-        }
+        }*/
     }
-}
 
-@media (min-width: 40rem) {
-    .login {
-        &__white {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            background-color: white;
-        }
-
-        &__content {
-            width: 70%;
-            height: 80vh;
-            box-shadow: 2px 2px 8px #3838383d;
-            padding: 5.5rem;
-            .logo {
-                display: none;
-            }
-        }
-
-        &__orange {
-            width: 50%;
-            background: #efa874;
-            display: flex;
-            align-items: center;
-        }
+    @include respond(jfc) {
+        font-size: 2rem;
     }
 }

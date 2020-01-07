@@ -48,7 +48,7 @@
         border: 1.5px solid $color-secondary;
     }
 
-    @include respond(phone) {
-        font-size: 1.7rem;
+    @include respond(jfc) {
+        font-size: 2rem;
     }
 }

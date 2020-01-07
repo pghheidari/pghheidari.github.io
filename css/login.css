@@ -601,6 +601,9 @@ body {
     @media (max-width: 75em) {
       .login__pic {
         width: 90%; } }
+  @media (max-width: 43.75em) {
+    .login {
+      height: auto; } }
 
 .prq {
   margin-top: 2rem;

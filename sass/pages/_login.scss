@@ -101,6 +101,10 @@
             width: 90%;
         }
     }
+
+    @include respond(jfc) {
+        height: auto;
+    }
 }
 
 .prq {

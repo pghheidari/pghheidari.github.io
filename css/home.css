@@ -845,6 +845,9 @@ body {
         margin-bottom: 0; } }
   @media (max-width: 37.5em) {
     .sample__text {
+      padding: 34% 16% 0 0; } }
+  @media (max-width: 37.5em) {
+    .sample__text {
       padding: 32% 16% 0 0; } }
   @media (max-width: 28.125em) {
     .sample__text {

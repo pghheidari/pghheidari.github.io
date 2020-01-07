@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assests/favicon-32x32.png">
+    <title>آموزش زبان انگلیسی رضا آرش نیا</title>
+
+    <link rel="stylesheet" href="css/other.css">
+</head>
+
+<body>
+    <!--Course Details Header = cdh-->
+    <header class="cdh">
+        <!--Logo Box = lb-->
+        <a href="index.html" class="cdh__lb">
+            <img src="assets/img/logo.png" alt="آموزش زبان انگلیسی رضا آرش نیا">
+        </a>
+        <a href="beginner.html">
+            <p>دوره مکالمه و گرامر 1 و 2</p>
+        </a>
+    </header>
+    <!--Course Details = cd-->
+    <div class="cd">
+        <!--Course Details Sidebar = cds-->
+        <div class="cds">
+            <p class="cds__title">محتویات دوره</p>
+            <ul class="cds__subjects">
+                <button class="accordion">درس اول</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>1. مکالمه استارتر</span>
+                        <span>2 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>2. آموزش خواندن</span>
+                        <span>4 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس دوم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>3. تمرین تلفظ لهجه آمریکایی</span>
+                        <span>5 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>4. آموزش مکالمه</span>
+                        <span>3 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>5. آموزش تکنیک های انگلیسی</span>
+                        <span>7 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس سوم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>6. تمرین تلفظ لغات</span>
+                        <span>4 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس چهارم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>7. تمرین شنیداری</span>
+                        <span>8 دقیقه</span>
+                    </li>
+                    <li class="cds__subject">
+                        <span>8. تمرین تلفظ لهجه آمریکایی</span>
+                        <span>10 دقیقه</span>
+                    </li>
+                </div>
+                <button class="accordion">درس پنجم</button>
+                <div class="panel">
+                    <li class="cds__subject">
+                        <span>9. مکالمه موقعیت</span>
+                        <span>7 دقیقه</span>
+                    </li>
+                </div>
+
+            </ul>
+
+        </div>
+        <!--Course Details Content = cdc-->
+        <div class="cdc">
+            <video controls>
+                <source src="https://rezaarashnia.com/uploads/files/files/package/1_grammar1/Term_2_H/Passive_Past_Perfect_H.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

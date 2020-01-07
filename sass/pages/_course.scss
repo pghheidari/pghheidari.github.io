@@ -1,0 +1,143 @@
+/* Course Details Content---------------------------------------------------------- */
+.cd {
+    display: flex;
+
+    &h {
+        display: flex;
+        align-items: center;
+
+        padding: 1rem 3rem;
+        border-bottom: 1px solid #d8d8d8;
+
+        &__lat {
+            display: flex;
+        }
+
+        &__lb {
+            height: 6rem;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        p {
+            font-family: "IRANSans-FD";
+            font-size: 1.8rem;
+            padding-right: 2rem;
+            margin-right: 2.5rem;
+            border-right: 1px solid $color-black;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-black;
+        }
+    }
+
+    &s {
+        width: 25%;
+        overflow-y: scroll;
+        direction: ltr;
+        height: calc(100vh - 85px);
+
+        &__title {
+            font-family: "IRANSans-Bold";
+            border-bottom: 1px solid #d8d8d8;
+            padding: 2rem;
+            margin: 0;
+            text-align: right;
+            font-size: 1.6rem;
+
+            @include respond(tab-port) {
+                text-align: center;
+            }
+        }
+
+        &__subject {
+            font-family: "IRANSans-FD";
+            font-size: 1.5rem;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &s {
+                direction: rtl;
+                list-style: none;
+                font-size: .9rem;
+                padding: 0;
+                margin: 0;
+
+                .panel {
+                    background-color: white;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                }
+            }
+
+            &:hover {
+                background: #eee;
+            }
+        }
+
+        @include respond(tab-port) {
+            order: 2;
+            width: 100%;
+        }
+    
+    }
+
+    &c {
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #d8d8d8;
+        background-image: url("../assets/img/back2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5% 12%;
+
+        video {
+            width: 100%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        @include respond(s-phone) {
+            padding: 0;
+        }
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+}
+
+.accordion {
+    background-color: #f7f7f7;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    outline: none;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    position: relative;
+    font-family: inherit;
+    border-bottom: 1px solid $color-grey-light2;
+
+    &::after {
+        content: '\276F';
+        position: absolute;
+        left: 0;
+        transform: rotate(270deg) translateY(20px);
+    }
+}

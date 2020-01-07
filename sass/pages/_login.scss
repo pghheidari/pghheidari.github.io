@@ -102,8 +102,15 @@
         }
     }
 
+    @include respond(tab-land) {
+        height: 100vh;
+    }
+
     @include respond(jfc) {
         height: auto;
+    }
+    @include respond(s-phone) {
+        height: 100vh;
     }
 }
 

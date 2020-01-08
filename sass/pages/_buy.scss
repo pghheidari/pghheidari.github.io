@@ -277,4 +277,7 @@
     @include respond(tab-port) {
         flex-direction: column;
     }
+    @include respond(s-phone) {
+        padding: 0 2%;
+    }
 }

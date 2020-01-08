@@ -710,6 +710,9 @@ body {
   @media (max-width: 56.25em) {
     .buy-course {
       flex-direction: column; } }
+  @media (max-width: 28.125em) {
+    .buy-course {
+      padding: 0 2%; } }
 
 /* Course Details Content---------------------------------------------------------- */
 .cd {

@@ -1,5 +1,5 @@
 .header {
-    padding: 1.6rem 16%;
+    padding: 1.6rem 10%;
     height: 18vh;
     display: flex;
     justify-content: space-between;
@@ -68,6 +68,7 @@
 }
 
 .title {
+    grid-column: 1/5;
     background-color: $color-primary;
     color: $color-white;
     text-align: center;
@@ -76,6 +77,11 @@
 
     h1 {
         font-size: 3.52rem;
+    }
+
+    p {
+        font-size: 3.52rem;
+        font-family: "IRANSans-Bold-FD";
     }
 }
 
@@ -97,9 +103,19 @@
     }
 
     a {
+        color: $color-white;
+        font-size: 1.5rem;
         padding: 0px 1.28rem;
         text-decoration: none;
-        color: $color-grey-dark1;
+        font-family: "IRANSans-FD";
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+
+        @include respond(s-phone) {
+            font-size: 1.6rem;
+        }
     }
 
 }

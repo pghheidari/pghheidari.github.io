@@ -68,13 +68,25 @@
 }
 
 .title {
-    background: url("../assets/img/Shape3.png") 55% 50% no-repeat, $color-primary;
-    grid-column: 1/6;
+    background-color: $color-primary;
+    color: $color-white;
     text-align: center;
-    padding: 3.2rem;
+    padding: 2% 0 10% 0;
+    position: relative;
 
     h1 {
         font-size: 3.52rem;
+    }
+}
+
+#curve5 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    path {
+        fill: #fff;
     }
 }
 
@@ -152,38 +164,4 @@
     &__item a {
         font-size: 2.4rem;
     }
-}
-
-.second-header {
-    background: white;
-
-    &__main {
-        height: auto;
-        padding: 1.6rem 0px;
-        display: grid;
-        grid-template-columns: 10% 0.4fr 1.9fr 0.7fr 10%;
-
-        &--icons {
-            display: none;
-
-            .icon {
-                width: 3.2rem;
-                height: 3.2rem;
-                padding-right: 1.6rem;
-            }
-
-            .btn {
-                font-size: 1.44rem;
-
-                &:hover {
-                    border: 1px solid $color-secondary;
-                }
-            }
-        }
-    }
-}
-
-.second-main-nav {
-    display: none;
-    font-size: 1.44rem;
 }

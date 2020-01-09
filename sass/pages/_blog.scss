@@ -1,0 +1,251 @@
+#blog {
+    padding: 0 12% 15% 12%;
+
+    @include respond(tab-port) {
+        padding: 0 5% 15% 5%;
+    }
+
+    /*@include respond(s-phone) {
+        padding: 12%;
+    }*/
+}
+
+.blog {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+
+        &--title {
+            border-left: 1px solid $color-grey-dark3;
+            width: 18%;
+
+            .tag {
+                @include respond(s-phone) {
+                    font-size: 1.5rem;
+                    color: $color-grey-dark3;
+                }
+            }
+
+            h3 {
+                margin: 0;
+
+                @include respond(s-phone) {
+                    font-size: 2.1rem;
+                }
+            }
+
+            @include respond(phone) {
+                width: 47%;
+            }
+        }
+
+        &--desc {
+            @include respond(phone) {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+        margin-top: 4.8rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            padding: 0 10%;
+        }
+    }
+
+    &__box {
+        width: 30%;
+        border: 1px solid #eeeded;
+        box-shadow: 2px 3px 8px 0px #f3f3f3;
+        text-align: right;
+        border-radius: 3px;
+        align-self: stretch;
+
+        &:not(:last-child) {
+            margin-left: 5%;
+
+            @include respond(phone) {
+                margin-left: auto;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0px 1px 16px 0px #d2d2d2;
+        }
+
+        img {
+            display: block;
+        }
+
+        &--content {
+            text-align: justify;
+            padding: 1.6rem;
+            font-size: 1.4rem;
+
+            h4 {
+                margin: 0;
+
+                @include respond(phone) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            p {
+                @include respond(phone) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            a {
+                font-family: "IRANSans-Bold";
+                text-decoration: none;
+                color: darken($color: $color-secondary, $amount: 20%);
+
+                &::before {
+                    content: "";
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    display: inline-block;
+                    margin-left: 0.48rem;
+                    margin-bottom: -0.32rem;
+                    //background: url('../assets/icon/plus.svg') center/cover no-repeat;
+                }
+
+                @include respond(phone) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            @include respond(s-phone) {
+                font-size: 2rem;
+            }
+        }
+
+        @include respond(phone) {
+            width: 80%;
+            margin: 0 auto 5% auto;
+        }
+
+        @include respond(s-phone) {
+            width: 100%;
+            margin: 0 auto 5% auto;
+        }
+    }
+}
+
+.blog-singlepost {
+    display: flex;
+    padding: 0 10%;
+
+    &__sidebar {
+        width: 25%;
+
+        h4 {
+            font-size: 1.7rem;
+            margin: 0;
+        }
+
+        #search-2 {
+            margin-bottom: 15%;
+
+            .screen-reader-text {
+                display: none;
+            }
+
+            #searchform {
+                margin-top: 5%;
+            }
+
+            input {
+                padding: .6rem;
+                border-radius: 5px;
+                border: 1px solid;
+                outline: none;
+            }
+        }
+
+        #recent-posts-2, #categories-2 {
+            margin-bottom: 15%;
+
+            ul {
+                padding: 0;
+                font-size: 1.3rem;
+
+                li {
+                    padding: .5rem 0;
+
+                    a {
+                        text-decoration: none;
+                        color: lighten($color: $color-primary, $amount: 8%);
+                    }
+                }
+            }
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+
+    &__content {
+        width: 75%;
+        padding: 0 5% 10% 0;
+
+        h1 {
+            font-size: 2.7rem;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+        }
+
+        h4 {
+            font-size: 2rem;
+        }
+
+        h5 {
+            font-size: 1.9rem;
+        }
+
+        h6 {
+            font-size: 1.8rem;
+        }
+
+        p,
+        ul,
+        ol {
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+
+        img {
+            max-width: 60%;
+        }
+
+        a {
+            text-decoration: none;
+            color: lighten($color: $color-primary, $amount: 20%);
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+}

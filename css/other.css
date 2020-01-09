@@ -760,7 +760,7 @@ body {
   .main-container2 > section {
     grid-column: 2/4;
     padding: 0 10%; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 43.75em) {
       .main-container2 > section {
         padding: 0; } }
   @media (max-width: 75em) {

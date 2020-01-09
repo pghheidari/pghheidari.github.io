@@ -36,7 +36,11 @@
         grid-column: 2/4;
         padding: 0 10%;
 
-        @include respond(jfc) {
+        @include respond(tab-land) {
+            padding: 0 10%;
+        }
+
+        @include respond(tab-port) {
             padding: 0;
         }
     }

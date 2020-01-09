@@ -1,0 +1,72 @@
+.contact-us {
+    grid-column: 2/4;
+    display: flex;
+    padding: 10% 0;
+
+    &__text {
+        padding-left: 5%;
+        width: 45%;
+
+        h2 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.7rem;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    &__form {
+        width: 55%;
+
+        button {
+            font-family: inherit;
+            border: none;
+            padding: 1rem 4rem;
+            outline: none;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        &--group {
+            display: flex;
+
+            input:first-child {
+                margin-left: 1rem;
+            }
+
+            input {
+                width: 50%;
+            }
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        padding: 20% 0 30% 0;
+    }
+}
+
+.contact-us__form--group input,
+.contact-us__form textarea {
+    font-family: inherit;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border: none;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 5px;
+}

@@ -732,6 +732,56 @@ body {
     .buy-course {
       padding: 0 2%; } }
 
+.contact-us {
+  grid-column: 2/4;
+  display: flex;
+  padding: 10% 0; }
+  .contact-us__text {
+    padding-left: 5%;
+    width: 45%; }
+    .contact-us__text h2 {
+      margin: 0;
+      font-size: 3rem; }
+    .contact-us__text p {
+      text-align: justify;
+      font-size: 1.7rem; }
+    @media (max-width: 37.5em) {
+      .contact-us__text {
+        width: 100%;
+        padding-left: 0; } }
+  .contact-us__form {
+    width: 55%; }
+    .contact-us__form button {
+      font-family: inherit;
+      border: none;
+      padding: 1rem 4rem;
+      outline: none; }
+    .contact-us__form textarea {
+      width: 100%; }
+    .contact-us__form--group {
+      display: flex; }
+      .contact-us__form--group input:first-child {
+        margin-left: 1rem; }
+      .contact-us__form--group input {
+        width: 50%; }
+    @media (max-width: 37.5em) {
+      .contact-us__form {
+        width: 100%; } }
+  @media (max-width: 37.5em) {
+    .contact-us {
+      flex-direction: column;
+      padding: 20% 0 30% 0; } }
+
+.contact-us__form--group input,
+.contact-us__form textarea {
+  font-family: inherit;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 5px; }
+
 .main-container {
   display: grid;
   grid-template-columns: 10% 1fr 3fr 10%; }
@@ -760,7 +810,10 @@ body {
   .main-container2 > section {
     grid-column: 2/4;
     padding: 0 10%; }
-    @media (max-width: 43.75em) {
+    @media (max-width: 75em) {
+      .main-container2 > section {
+        padding: 0 10%; } }
+    @media (max-width: 56.25em) {
       .main-container2 > section {
         padding: 0; } }
   @media (max-width: 75em) {

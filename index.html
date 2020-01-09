@@ -85,8 +85,8 @@
                     <p>اگر تصمیم جدی به یادگیری کامل انگلیسی تا سطح پیشرفته دارید می تونید اپلیکیشن آموزش زبان رو نصب و
                         دوره
                         کامل را ثبت نام کنید</p>
-                    <a class="btn btn--yellow" href="login.html">دانلود اپلیکیشن</a>
-                    <a class="btn btn--white" href="login.html">مشاهده دوره ها</a>
+                    <a class="btn btn--yellow" href="#">دانلود اپلیکیشن</a>
+                    <a class="btn btn--white" href="courses.html">مشاهده دوره ها</a>
                 </div>
 
             </div>
@@ -186,7 +186,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn--blue" href="login.html">مشاهده همه دوره ها</a>
+            <a class="btn btn--blue" href="courses.html">مشاهده همه دوره ها</a>
         </section>
         <section id="sample">
             <svg id="curve2" viewBox="0 0 1922.25 244.18">
@@ -200,7 +200,8 @@
                     <a class="btn btn--yellow" href="login.html">مشاهده سایر فیلم های رایگان</a>
                 </div>
                 <div class="sample__video">
-                    <a href="#"><img class="play-button" src="assets/icon/video-play.svg"></a>
+                    <a href="#" class="js-video-button" data-channel="video"
+                    data-video-url="https://rezaarashnia.com/uploads/files/files/package/1_grammar1/Term_2_H/Passive_Past_Perfect_H.mp4"><img class="play-button" src="assets/icon/video-play.svg"></a>
                     <svg viewbox="0 0 1042.1 1261.8" >
                         <defs>
                             <clipPath id="svgPath">
@@ -329,6 +330,16 @@
             </div>
         </footer>
     </main>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script>
+        $(".js-video-button").modalVideo({
+            youtube: {
+                controls: 0,
+                nocookie: true
+            }
+        });
+    </script>
     <script src="js/shared.js"></script>
 </body>
 </html>

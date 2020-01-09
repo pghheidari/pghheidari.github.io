@@ -22,7 +22,7 @@
                 <span class="toggle-button__bar"></span>
             </button>
             <a href="index.html" class="header__logo">
-                <img src="assets/img/logo.png" alt="آموزش زبان انگلیسی رضا آرش نیا">
+                <img src="assets/img/logo.png" alt="ویتاک - آموزش زبان انگلیسی">
             </a>
             <nav class="main-nav">
                 <ul class="main-nav__items">
@@ -30,7 +30,7 @@
                         <a href="index.html">صفحه اصلی</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#course">دوره های زبان</a>
+                        <a href="courses.html">دوره های زبان</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="blog/blog.html">اخبار و مقالات</a>
@@ -44,6 +44,7 @@
                 </ul>
             </nav>
         </div>
+
         <div class="header__icons">
             <a class="btn btn--yellow user-btn" href="login.html">ثبت نام / ورود</a>
             <!--<a href="login.html"><img class="icon user-icon" src="assets/icon/user.svg"></a>-->
@@ -76,45 +77,50 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="main-container">
         <div class="title">
             <div>
-                <h1>سبد خرید</h1>
-                <!--<div class="breadcrumb">
-                        <a href="index.html">صفحه اصلی</a>
-                        <img src="assets/icon/left-arrow.svg">
-                        <a>تماس با ما</a>
-                    </div>-->
+                <h1>تماس با ما</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">صفحه اصلی</a>
+                    <img src="assets/icon/left-arrow.svg">
+                    <a href="#">تماس با ما</a>
+                </div>
             </div>
             <svg id="curve5" viewBox="0 0 1920.18 191.29">
                 <path class="st0" d="M0,2.2c0,0,67,68.5,277,80.9c234,0,1296.7,0.1,1296.7,0.1s250.1-0.8,346.5,99.6c0,0.3,0,8.3,0,8.5
-			c-174-0.2-1907.4,0.1-1920.2,0.1V2.2z"/>
+			c-174-0.2-1907.4,0.1-1920.2,0.1V2.2z" />
             </svg>
         </div>
-        <div id="steps">
-            <ul>
-                <li>
-                    <div class="step" data-desc="سبد خرید">1</div>
-                </li>
-                <li>
-                    <div class="step" data-desc="عملیات پرداخت">2</div>
-                </li>
-                <li>
-                    <div class="step active" data-desc="دریافت دوره">3</div>
-                </li>
-            </ul>
-        </div>
+        <div class="contact-us">
+            <div class="contact-us__text">
+                <h2>تماس با ما</h2>
+                <p>در صورت وجود هرگونه سوال و یا ارائه انتقادات و پیشنهادات از طریق فرم زیر و یا سایر راه های ارتباطی با
+                    ما در تماس باشید. گروه پشتیبانی در اسرع وقت پاسخگوی تمامی کاربران است. همچنین برای تعیین سطح
+                    رایگان نیز میتوانید از همین روش اقدام کنید.</p>
+            </div>
 
-        <div class="buy-course__purchased">
-            <p class="tnx">با تشکر از خرید شما!</p>
-            <p class="revolution">قراره زبان انگلیسیتون با این دوره متحول بشه :)</p>
-            <a href="course.html" class="btn btn--yellow">بریم یاد بگیریم</a>
+            <form action="#" class="contact-us__form">
+                <div class="contact-us__form--group">
+                    <input type="text" placeholder="نام و نام خانوادگی" required>
+                    <input type="email" placeholder="ایمیل" required>
+                </div>
+                <div class="contact-us__form--group">
+                    <input type="tel" placeholder="شماره موبایل" pattern="[0][9][0-9]{9}"
+                        autocomplete="off" required>
+                    <input type="text" placeholder="موضوع" required>
+                </div>
+                <textarea rows="4" cols="50" placeholder="متن پیام"></textarea>
+                <button class="btn btn--blue">ارسال پیام</button>
+            </form>
+
         </div>
 
     </main>
+
     <footer id="footer">
         <svg id="curve4" viewBox="0 0 1920 352">
-            <path class="cls-1" d="M0,268s1146-432,1920,84V0H0Z" />
+            <path class="cls-1" d="M0,268s1146-432,1920,84V0H0Z"/>
         </svg>
         <div class="footer__newsletter">
             <div class="footer__newsletter--title">
@@ -123,20 +129,20 @@
             </div>
             <form class="footer__newsletter--form">
                 <input type="text" placeholder="ایمیل خود را وارد کنید" name="mail" required>
-                <button type="submit"><img src="assets/icon/left-arrow2.svg"></button>
+                <button type="submit"><img src="assets/icon/left-arrow2.svg" ></button>
             </form>
         </div>
         <div class="footer__main">
             <div class="footer__main--info">
-                <a href="index.html"><img src="assets/img/logo.png"></a>
+                <a href="index.html"><img src="assets/img/logo.png" ></a>
                 <p class="location">ایران، تهران</p>
                 <p class="call">989356378982</p>
                 <p class="email">info@arashnia.com</p>
                 <div class="footer__main--social">
-                    <a href="#"><img src="assets/icon/instagram.svg"></a>
-                    <a href="#"><img src="assets/icon/telegram.svg"></a>
-                    <a href="#"><img src="assets/icon/facebook-logo.svg"></a>
-                    <a href="#"><img src="assets/icon/linkedin-logo.svg"></a>
+                    <a href="#"><img src="assets/icon/instagram.svg" ></a>
+                    <a href="#"><img src="assets/icon/telegram.svg" ></a>
+                    <a href="#"><img src="assets/icon/facebook-logo.svg" ></a>
+                    <a href="#"><img src="assets/icon/linkedin-logo.svg" ></a>
                 </div>
             </div>
             <div class="footer__main--guide">
@@ -153,9 +159,9 @@
                 <a href="#">درباره ما</a>
                 <a href="#">تماس با ما</a>
             </div>
-            <a class="top" href="#"><img src="assets/icon/up-arrow.svg"></a>
+            <a class="top" href="#"><img src="assets/icon/up-arrow.svg" ></a>
         </div>
-        <hr>
+        <hr >
         <div class="footer__copyright">
             <p>2020 - 2018 &copy; حقوق انتشار محفوظ است</p>
             <div class="footer__designby">
@@ -164,18 +170,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script>
-        $('.step').each(function (index, el) {
-            $(el).not('.active').addClass('done');
-            $('.done').html('<i class="icon-valid"></i>');
-            if ($(this).is('.active')) {
-                $(this).parent().addClass('pulse')
-                return false;
-            }
-        });
-    </script>
-    <script src="js/shared.js"></script>
+    <script src="../js/shared.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,15 @@
     display: grid;
     grid-template-columns: 10% 1fr 3fr 10%;
 
+    > section {
+        grid-column: 2/4;
+        padding: 0 10%;
+
+        @include respond(s-phone) {
+            padding: 0;
+        }
+    }
+
     @include respond(tab-land) {
         grid-template-columns: 10% 1fr 3fr 10%;
     }
@@ -12,6 +21,36 @@
 
     @include respond(jfc) {
         grid-template-columns: 12% 1fr 3fr 12%;
+    }
+
+    @include respond(s-phone) {
+        grid-template-columns: 10% 1fr 3fr 10%;
+    }
+}
+
+.main-container2 {
+    display: grid;
+    grid-template-columns: 10% 1fr 3fr 10%;
+
+    > section {
+        grid-column: 2/4;
+        padding: 0 10%;
+
+        @include respond(phone) {
+            padding: 0;
+        }
+    }
+
+    @include respond(tab-land) {
+        grid-template-columns: 10% 1fr 3fr 10%;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 5% 1fr 2fr 5%;
+    }
+
+    @include respond(jfc) {
+        grid-template-columns: 5% 1fr 3fr 5%;
     }
 
     @include respond(s-phone) {
@@ -212,17 +251,26 @@ div[class^="course-sidebar__intro"] p::before {
         }
     }
 
-    @include respond(jfc) {
+    @include respond(tab-land) {
         grid-column: 2/4;
         padding: 5% 0 20% 0;
     }
 }
 
 .courses {
+    
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    //justify-content: space-between;
     margin-bottom: 3.2rem;
+
+    &:first-child {
+        margin-top: 5%;
+    }
+
+    &:last-child {
+        margin-bottom: 15%;
+    }
 
     @include respond(s-phone) {
         flex-direction: column;
@@ -236,6 +284,15 @@ div[class^="course-sidebar__intro"] p::before {
     border-radius: 3px;
     align-self: stretch;
     text-align: right;
+    box-shadow: 1px 1px 6px #cacaca;
+
+    &:hover {
+        box-shadow: 1px 1px 12px #cacaca;
+    }
+
+    &:not(:last-child) {
+        margin-left: 5%;
+    }
 
     &__image {
         width: 100%;
@@ -572,4 +629,13 @@ div[class^="course-sidebar__intro"] p::before {
     width: 2.5rem;
     height: 2.5rem;
     display: none;
+}
+
+.last-hr {
+    width: 100%;
+    grid-column: 3/4;
+
+    @include respond(tab-land) {
+        grid-column: 2/4;
+    }
 }

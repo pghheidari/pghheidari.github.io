@@ -75,13 +75,13 @@
     padding: 2% 0 10% 0;
     position: relative;
 
-    h1 {
-        font-size: 3.52rem;
-    }
-
-    p {
+    h1, p {
         font-size: 3.52rem;
         font-family: "IRANSans-Bold-FD";
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
     }
 }
 

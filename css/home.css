@@ -343,7 +343,8 @@ body {
   height: 1.6rem;
   display: inline-block;
   margin-left: 0.48rem;
-  margin-bottom: -0.32rem; }
+  margin-bottom: -0.32rem;
+  background: url("../assets/icon/maps-and-flags.svg") center/cover no-repeat; }
 
 .call {
   font-family: "IRANSans-FD"; }
@@ -353,7 +354,8 @@ body {
     height: 1.6rem;
     display: inline-block;
     margin-left: 0.48rem;
-    margin-bottom: -0.32rem; }
+    margin-bottom: -0.32rem;
+    background: url("../assets/icon/call-answer.svg") center/cover no-repeat; }
   .call::after {
     content: '+'; }
 
@@ -363,7 +365,8 @@ body {
   height: 1.6rem;
   display: inline-block;
   margin-left: 0.48rem;
-  margin-bottom: -0.32rem; }
+  margin-bottom: -0.32rem;
+  background: url("../assets/icon/envelope.svg") center/cover no-repeat; }
 
 .top {
   width: 4rem; }

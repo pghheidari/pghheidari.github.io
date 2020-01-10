@@ -182,6 +182,10 @@
     align-self: stretch;
     text-align: right;
 
+    &:hover {
+        box-shadow: 2px 3px 16px 0px #b9b9b9;
+    }
+
     &__image {
         width: 100%;
         display: block;
@@ -733,6 +737,10 @@
         text-align: right;
         border-radius: 3px;
         align-self: stretch;
+
+        &:hover {
+            box-shadow: 2px 3px 16px 0px #b9b9b9;
+        }
 
         img {
             display: block;

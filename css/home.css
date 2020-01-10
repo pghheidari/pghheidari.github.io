@@ -389,7 +389,7 @@ body {
       top: -1px; } }
 
 .header {
-  padding: 1.6rem 10%;
+  padding: 1.6rem 16%;
   height: 18vh;
   display: flex;
   justify-content: space-between; }

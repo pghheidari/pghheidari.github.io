@@ -991,7 +991,7 @@ div[class^="course-sidebar__intro"] p::before {
   text-align: right;
   box-shadow: 1px 1px 6px #cacaca; }
   .course:hover {
-    box-shadow: 1px 1px 12px #cacaca; }
+    box-shadow: 2px 3px 16px 0px #b9b9b9; }
   .course:not(:last-child) {
     margin-left: 5%; }
   .course__image {

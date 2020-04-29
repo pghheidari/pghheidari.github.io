@@ -46,6 +46,10 @@ body {
   src: url("../assets/fonts/IRANSansWeb.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "IRANSans-Medium";
+  src: url("../assets/fonts/IRANSansWeb_Medium.ttf") format("truetype"); }
+
+@font-face {
   font-family: "IRANSans-Bold";
   src: url("../assets/fonts/IRANSansWeb_Bold.ttf") format("truetype"); }
 
@@ -1251,3 +1255,137 @@ div[class^="course-sidebar__intro"] p::before {
   @media (max-width: 75em) {
     .last-hr {
       grid-column: 2/4; } }
+
+.tab {
+  display: flex; }
+  .tabOuter {
+    border: 1px solid #c8c8c8;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 60%;
+    margin: 5rem auto 2rem auto; }
+    .tabOuter button {
+      background-color: transparent;
+      font-family: inherit;
+      font-size: 1.5rem;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s; }
+      .tabOuter button:hover {
+        background-color: #e2e2e2; }
+      .tabOuter button.active {
+        background-color: #c8c8c8; }
+    @media (max-width: 28.125em) {
+      .tabOuter {
+        width: 100%; } }
+  .tabInner button {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    transition: 0.3s; }
+    .tabInner button:hover {
+      background-color: #e2e2e2; }
+    .tabInner button.active {
+      background-color: #c8c8c8; }
+  @media (max-width: 37.5em) {
+    .tabInner {
+      margin: 0 auto; } }
+
+.tabcontent1,
+.tabcontent2 {
+  display: none; }
+
+.tabcontent1:first-child,
+.tabcontent2:first-child {
+  display: block; }
+
+.tabcontainer {
+  border: 1px solid #c8c8c8;
+  border-radius: 20px;
+  margin-bottom: 20rem; }
+  .tabcontainer__header {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem auto 5rem auto; }
+    .tabcontainer__header--search input {
+      font-family: inherit;
+      font-size: 1.3rem;
+      padding: 12px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border: none;
+      background-color: #f1f1f1;
+      outline: none;
+      min-width: 20rem; }
+    .tabcontainer__header--search button {
+      font-family: inherit;
+      font-size: 1.3rem;
+      padding: 12px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      border: none;
+      background-color: #f1f1f1;
+      position: relative;
+      right: -3px;
+      outline: none;
+      cursor: pointer; }
+    @media (max-width: 37.5em) {
+      .tabcontainer__header--search {
+        margin: 3rem auto 0 auto; } }
+    @media (max-width: 43.75em) {
+      .tabcontainer__header {
+        width: 100%; } }
+    @media (max-width: 37.5em) {
+      .tabcontainer__header {
+        flex-direction: column; } }
+  .tabcontainer__content {
+    text-align: center;
+    margin-bottom: 4rem; }
+    .tabcontainer__content--qa {
+      border: 1px solid #e2e2e2;
+      border-radius: 20px;
+      width: 80%;
+      margin: 0 auto 2rem auto; }
+
+.question {
+  background-color: #f6f6f6;
+  font-family: "IRANSans-Medium";
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  text-align: right;
+  outline: none;
+  transition: 0.4s; }
+  .question::after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px; }
+  .question.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    .question.active:after {
+      content: "\2212"; }
+
+.panel {
+  text-align: justify;
+  font-size: 1.3rem;
+  display: none;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }

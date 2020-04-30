@@ -1278,27 +1278,29 @@ div[class^="course-sidebar__intro"] p::before {
       .tabOuter button:hover {
         background-color: #e2e2e2; }
       .tabOuter button.active {
-        background-color: #c8c8c8; }
+        background-color: #f3d250; }
     @media (max-width: 28.125em) {
       .tabOuter {
         width: 100%; } }
-  .tabInner button {
-    background-color: transparent;
-    font-family: inherit;
-    font-size: 1.3rem;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 12px 14px;
-    transition: 0.3s; }
-    .tabInner button:hover {
-      background-color: #e2e2e2; }
-    .tabInner button.active {
-      background-color: #c8c8c8; }
-  @media (max-width: 37.5em) {
-    .tabInner {
-      margin: 0 auto; } }
+  .tabInner {
+    margin-bottom: 2rem; }
+    .tabInner button {
+      background-color: transparent;
+      font-family: inherit;
+      font-size: 1.3rem;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 14px;
+      transition: 0.3s; }
+      .tabInner button:hover {
+        background-color: #e2e2e2; }
+      .tabInner button.active {
+        background-color: #f7e189; }
+    @media (max-width: 37.5em) {
+      .tabInner {
+        margin: 0 auto; } }
 
 .tabcontent1,
 .tabcontent2 {
@@ -1315,7 +1317,8 @@ div[class^="course-sidebar__intro"] p::before {
   .tabcontainer__header {
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin: 3rem auto 5rem auto; }
     .tabcontainer__header--search input {
       font-family: inherit;
@@ -1345,9 +1348,6 @@ div[class^="course-sidebar__intro"] p::before {
     @media (max-width: 43.75em) {
       .tabcontainer__header {
         width: 100%; } }
-    @media (max-width: 37.5em) {
-      .tabcontainer__header {
-        flex-direction: column; } }
   .tabcontainer__content {
     text-align: center;
     margin-bottom: 4rem; }

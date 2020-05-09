@@ -1,0 +1,135 @@
+.fas {
+    border-radius: 20px;
+    border: 1px solid $color-grey-light2;
+    margin-top: 5rem;
+
+    .tabcontainer__header--search {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        @include respond(s-phone) {
+            input {
+                font-size: 1.8rem;
+                min-width: 28rem;
+            }
+
+            button {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+#filter__container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.filter {
+    &__btn {
+        font-family: inherit;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        border: 1px solid;
+        margin: 2rem 1.5rem;
+        outline: none;
+        padding: 12px 16px;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ddd;
+        }
+
+        &.active {
+            background-color: #666;
+            color: white;
+        }
+
+        @include respond(s-phone) {
+            margin: 2rem .5rem 0 .5rem;
+        }
+    }
+}
+
+.filtered {
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 2rem 0 12rem 0;
+    }
+
+    &__div {
+        position: relative;
+        border-radius: 8px;
+        color: $color-white;
+        text-align: center;
+        margin-bottom: 4rem;
+        display: none;
+        padding: 10% 0;
+        width: 30%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        a {
+            width: 100%;
+            color: $color-white;
+            font-size: 1.6rem;
+            text-decoration: none;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            position: absolute;
+            top: 2%;
+            left: 75%;
+            padding: .3rem .7rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            background-color: $color-white;
+            color: $color-black;
+
+            @include respond(phone) {
+                left: 70%;
+            }
+
+            @include respond(s-phone) {
+                font-size: 2rem;
+                left: 80%;
+            }
+        }
+
+        @include respond(tab-port) {
+            //width: 40%;
+        }
+
+        @include respond(phone) {
+            width: 40%;
+            padding: 15% 0;
+        }
+
+        @include respond(s-phone) {
+            width: 100%;
+            padding: 20% 0;
+            top: 75%;
+            font-size: 2rem;
+        }
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

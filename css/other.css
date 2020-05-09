@@ -1389,3 +1389,102 @@ div[class^="course-sidebar__intro"] p::before {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out; }
+
+.fas {
+  border-radius: 20px;
+  border: 1px solid #c8c8c8;
+  margin-top: 5rem; }
+  .fas .tabcontainer__header--search {
+    text-align: center;
+    margin-bottom: 2rem; }
+    @media (max-width: 28.125em) {
+      .fas .tabcontainer__header--search input {
+        font-size: 1.8rem;
+        min-width: 28rem; }
+      .fas .tabcontainer__header--search button {
+        font-size: 1.8rem; } }
+
+#filter__container {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.filter__btn {
+  font-family: inherit;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid;
+  margin: 2rem 1.5rem;
+  outline: none;
+  padding: 12px 16px;
+  background-color: transparent;
+  cursor: pointer; }
+  .filter__btn:hover {
+    background-color: #ddd; }
+  .filter__btn.active {
+    background-color: #666;
+    color: white; }
+  @media (max-width: 28.125em) {
+    .filter__btn {
+      margin: 2rem .5rem 0 .5rem; } }
+
+.filtered__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem 0 12rem 0; }
+
+.filtered__div {
+  position: relative;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+  display: none;
+  padding: 10% 0;
+  width: 30%;
+  transition-property: transform;
+  transition-duration: 0.3s; }
+  .filtered__div:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  .filtered__div a {
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .filtered__div p {
+    position: absolute;
+    top: 2%;
+    left: 75%;
+    padding: .3rem .7rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #000; }
+    @media (max-width: 37.5em) {
+      .filtered__div p {
+        left: 70%; } }
+    @media (max-width: 28.125em) {
+      .filtered__div p {
+        font-size: 2rem;
+        left: 80%; } }
+  @media (max-width: 37.5em) {
+    .filtered__div {
+      width: 40%;
+      padding: 15% 0; } }
+  @media (max-width: 28.125em) {
+    .filtered__div {
+      width: 100%;
+      padding: 20% 0;
+      top: 75%;
+      font-size: 2rem; } }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }

@@ -1400,7 +1400,7 @@ div[class^="course-sidebar__intro"] p::before {
     @media (max-width: 28.125em) {
       .fas .tabcontainer__header--search input {
         font-size: 1.8rem;
-        min-width: 28rem; }
+        min-width: 22rem; }
       .fas .tabcontainer__header--search button {
         font-size: 1.8rem; } }
 
@@ -1503,10 +1503,7 @@ div[class^="course-sidebar__intro"] p::before {
       text-align: justify;
       font-size: 1.7rem;
       padding-right: 2rem;
-      margin: 0;
-      /*@include respond(tab-port) {
-                padding-top: 0;
-            }*/ }
+      margin: 0; }
       @media (max-width: 37.5em) {
         .tutorial__intro p {
           width: 100%;
@@ -1520,9 +1517,12 @@ div[class^="course-sidebar__intro"] p::before {
         .tutorial__intro--pic {
           width: 100%;
           min-height: 20rem; } }
+  .tutorial__pic {
+    border-radius: 8px;
+    min-height: 30rem; }
     @media (max-width: 37.5em) {
-      .tutorial__intro {
-        flex-direction: column; } }
+      .tutorial__pic {
+        min-height: 20rem; } }
   .tutorial__desc {
     font-size: 1.7rem;
     text-align: justify; }

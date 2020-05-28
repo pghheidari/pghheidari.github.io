@@ -10,7 +10,7 @@
         @include respond(s-phone) {
             input {
                 font-size: 1.8rem;
-                min-width: 28rem;
+                min-width: 22rem;
             }
 
             button {
@@ -154,10 +154,6 @@
             padding-right: 2rem;
             margin: 0;
 
-            /*@include respond(tab-port) {
-                padding-top: 0;
-            }*/
-
             @include respond(phone) {
                 width: 100%;
                 padding-top: 2rem;
@@ -175,9 +171,14 @@
                 min-height: 20rem;
             }
         }
+    }
+
+    &__pic {
+        border-radius: 8px;
+        min-height: 30rem;
 
         @include respond(phone) {
-            flex-direction: column;
+            min-height: 20rem;
         }
     }
 

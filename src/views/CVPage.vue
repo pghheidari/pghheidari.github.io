@@ -4,7 +4,7 @@
   >
     <!-- Name and title -->
     <div>
-      <h1 class="font-bold text-3xl">Ali Azizjahan</h1>
+      <h1 class="font-bold text-3xl">Pegah Heidari</h1>
       <p class="font-semibold text-blue">Software Engineer</p>
       <p class="font-semibold text-slate">
         {{ dob.toLocaleDateString('nl-NL') }}

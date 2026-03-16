@@ -1,6 +1,6 @@
-# Ali Azizjahan (Kyxey) - Portfolio Website
+# Pegah Heidari () - Portfolio Website
 
-A modern, responsive portfolio website showcasing the professional experience and skills of Ali Azizjahan (Kyxey), a Software Engineer with 7+ years of experience. Built with Vue.js 3, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website showcasing the professional experience and skills of Pegah Heidari, a Software Engineer with 7+ years of experience. Built with Vue.js 3, TypeScript, and Tailwind CSS.
 
 ## 🚀 Features
 
@@ -9,7 +9,7 @@ A modern, responsive portfolio website showcasing the professional experience an
 - **Vue.js 3** with Composition API and TypeScript
 - **Custom Color Scheme** using brand colors (Navy #0D1B2A, Slate #415A77, Orange #FC7A1E, Light #D9D9D9)
 - **Dark/Light Theme Toggle** with system preference detection and state persistence
-- **SEO Optimized** for "Ali Azizjahan", "Kyxey", "Azizjahan", and "Software Engineer"
+- **SEO Optimized** for "Pegah Heidari", "Azizjahan", and "Software Engineer"
 - **Performance Optimized** with code splitting and lazy loading
 - **Accessibility Compliant** with proper ARIA labels and semantic HTML
 - **Modern Animations** with smooth transitions and scroll effects
@@ -44,7 +44,7 @@ A modern, responsive portfolio website showcasing the professional experience an
 
    ```bash
    git clone <your-repo-url>
-   cd Kyxey.github.io
+   cd pghheidari.github.io
    ```
 
 2. **Install dependencies**

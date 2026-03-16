@@ -10,7 +10,7 @@
         <div class="mb-8">
           <img
             src="https://gravatar.com/avatar/801a1a0819b49baab04814d4e0bcd5e0efd46c7c2758cdc2d98007b16870ed69.jpg?size=512"
-            alt="Ali Azizjahan (Kyxey)"
+            alt="Pegah Heidari"
             class="w-48 h-48 md:w-52 md:h-52 rounded-full mx-auto shadow-2xl border-2 border-orange animate-slide-up"
             loading="eager"
           />
@@ -20,12 +20,7 @@
         <h1
           class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 animate-slide-up"
         >
-          Ali Azizjahan
-          <span
-            class="block text-2xl md:text-3xl lg:text-4xl text-orange font-medium mt-2"
-          >
-            (Kyxey)
-          </span>
+          Pegah Heidari
         </h1>
 
         <p
@@ -44,7 +39,7 @@
             Get In Touch
           </button>
           <a
-            href="/Resume-Ali-Azizjahan.pdf"
+            href="/Resume-Pegah-Heidari.pdf"
             target="_blank"
             class="btn btn-secondary"
           >

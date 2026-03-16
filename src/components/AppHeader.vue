@@ -8,7 +8,7 @@
         <a class="flex items-center" :href="websiteAddress">
           <img
             :src="isDark ? LogoAccent : LogoDark"
-            alt="Kyxey"
+            alt="Pegah Heidari Logo"
             class="h-9 min-w-24"
           />
         </a>
